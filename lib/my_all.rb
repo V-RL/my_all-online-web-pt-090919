@@ -4,7 +4,7 @@ def my_all?(collection)
   x = []
   i = 0 
   while i < collection.length 
-  x << puts yield(collection[i])
+  x << yield(collection[i])
   i = i + 1 
 end
 if x.include?(false)
